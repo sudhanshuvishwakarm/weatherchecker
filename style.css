@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    background: url(https://www.worldatlas.com/r/w1200/upload/56/c5/7c/shutterstock-520792630.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+}
+#img{
+    background: transparent;
+}
+@media screen and (max-width:450px) {
+    body{
+        background: url(https://th.bing.com/th/id/OIP.dB1O9S75v9mWgTNnltb2SgHaNK?w=1080&h=1920&rs=1&pid=ImgDetMain);
+        display: flex;
+        padding-top: 30px;
+        align-items: start;
+    }
+    #heading{
+        font-size: 40px;
+        font: bold;
+    }
+    #btn{
+        margin: 10px;
+    }
+    
+}

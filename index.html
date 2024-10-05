@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex justify-center Items-center">
+    <div class="container flex justify-center Items-center text-center flex-col w-[450px]">
+        <h1 id="heading" class="text-5xl text-center  text-[#00FFFF] text-semibold">Weather Checker</h1>
+        <div class="m-10">
+            <input list="place-names" type="text" placeholder="Enter city name" value=""
+                class="p-2 h-[40px] w-[230px] border-2 border-black" id="inp">
+            <datalist id="place-names">
+                <option value="indore">
+                <option value="ujjain">
+                <option value="rajasthan">
+                <option value="pratapgarh">
+                <option value="madhya pradesh">
+                <option value="uttar pradesh">
+                <option value="jammu">
+                <option value="tamilnadu">
+                <option value="jabalpur">
+                <option value="nagda">
+                <option value="harda">
+            </datalist>
+            <button class="bg-black text-white p-2 rounded-sm" id="btn" onclick="myfun()" type="submit">Search</button>
+        </div>
+        <h1 id="cityname" class="text-3xl text-center  text-[black] text-semibold -3"></h1>
+        <div class="flex flex-col justify-around Items-center gap-3">
+            <img id="img" class="h-[250px] w-[250px] mix-blend-screen bg-white mx-auto bg-inherit ">
+            <p id="temp" class="text-3xl text-center  text-[black] text-semibold"></p>
+            <p id="cloud" class="text-3xl text-center  text-[black] text-semibold"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
